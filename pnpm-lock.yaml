@@ -17,9 +17,6 @@ importers:
       '@sveltejs/adapter-auto':
         specifier: ^4.0.0
         version: 4.0.0(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))
-      '@sveltejs/adapter-node':
-        specifier: ^5.2.12
-        version: 5.2.12(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))
       '@sveltejs/kit':
         specifier: ^2.16.0
         version: 2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1))
@@ -29,6 +26,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.0.0
         version: 4.0.6(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1))
+      amplify-adapter:
+        specifier: ^0.2.0
+        version: 0.2.0(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))
       mdsvex:
         specifier: ^0.12.3
         version: 0.12.3(svelte@5.19.9)
@@ -231,9 +231,9 @@ packages:
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
 
-  '@rollup/plugin-commonjs@28.0.2':
-    resolution: {integrity: sha512-BEFI2EDqzl+vA1rl97IDRZ61AIwGH093d9nz8+dThxJNH8oSoB7MjWvPCX3dkaK1/RCJ/1v/R1XB15FuSs0fQw==}
-    engines: {node: '>=16.0.0 || 14 >= 14.17'}
+  '@rollup/plugin-commonjs@25.0.8':
+    resolution: {integrity: sha512-ZEZWTK5n6Qde0to4vS9Mr5x/0UZoqCxPVR9KRUjU4kA2sO7GEUn1fop0DAwpO6z0Nw/kJON9bDmSxdWxO/TT1A==}
+    engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^2.68.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
@@ -249,8 +249,8 @@ packages:
       rollup:
         optional: true
 
-  '@rollup/plugin-node-resolve@16.0.0':
-    resolution: {integrity: sha512-0FPvAeVUT/zdWoO0jnb/V5BlBsUSNfkIOtFHzMO4H9MOklrmQFY6FduVHKucNb/aTFxvnGhj4MNj/T1oNdDfNg==}
+  '@rollup/plugin-node-resolve@15.3.1':
+    resolution: {integrity: sha512-tgg6b91pAybXHJQMAAwW9VuWBO6Thi+q7BCNARLwSqlmsHz0XYURtGvh/AuwSADXSI4h/2uHbs7s4FzlZDGSGA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^2.78.0||^3.0.0||^4.0.0
@@ -366,11 +366,6 @@ packages:
     resolution: {integrity: sha512-kmuYSQdD2AwThymQF0haQhM8rE5rhutQXG4LNbnbShwhMO4qQGnKaaTy+88DuNSuoQDi58+thpq8XpHc1+oEKQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
-
-  '@sveltejs/adapter-node@5.2.12':
-    resolution: {integrity: sha512-0bp4Yb3jKIEcZWVcJC/L1xXp9zzJS4hDwfb4VITAkfT4OVdkspSHsx7YhqJDbb2hgLl6R9Vs7VQR+fqIVOxPUQ==}
-    peerDependencies:
-      '@sveltejs/kit': ^2.4.0
 
   '@sveltejs/kit@2.17.1':
     resolution: {integrity: sha512-CpoGSLqE2MCmcQwA2CWJvOsZ9vW+p/1H3itrFykdgajUNAEyQPbsaSn7fZb6PLHQwe+07njxje9ss0fjZoCAyw==}
@@ -496,6 +491,11 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
+  amplify-adapter@0.2.0:
+    resolution: {integrity: sha512-zK1oie4YCFj1Y/QwPzEi/55UVknzMQbjvJaMnuixV/iNK321qqeDBezJv7WkNRF92P8dfYwcnJ1YcjyOT0A50Q==}
+    peerDependencies:
+      '@sveltejs/kit': ^1.0.0 || ^2.0.0
+
   aria-query@5.3.2:
     resolution: {integrity: sha512-COROpnaoap1E2F000S62r6A60uHZnmlvomhfyT2DlTcrY1OrBKn2UhH7qn5wTC9zMvD0AY7csdPSNwKP+7WiQw==}
     engines: {node: '>= 0.4'}
@@ -503,6 +503,12 @@ packages:
   axobject-query@4.1.0:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
     engines: {node: '>= 0.4'}
+
+  balanced-match@1.0.2:
+    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+
+  brace-expansion@2.0.1:
+    resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
 
   chokidar@4.0.3:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
@@ -566,6 +572,9 @@ packages:
       picomatch:
         optional: true
 
+  fs.realpath@1.0.0:
+    resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
+
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -573,6 +582,11 @@ packages:
 
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
+
+  glob@8.1.0:
+    resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
+    engines: {node: '>=12'}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
@@ -583,6 +597,13 @@ packages:
 
   import-meta-resolve@4.1.0:
     resolution: {integrity: sha512-I6fiaX09Xivtk+THaMfAwnA3MVA5Big1WHF1Dfx9hFuvNIWpXnorlkzhcQf6ehrqQiiZECRt1poOAkPmer3ruw==}
+
+  inflight@1.0.6:
+    resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+
+  inherits@2.0.4:
+    resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
 
   is-core-module@2.16.1:
     resolution: {integrity: sha512-UfoeMA6fIJ8wTYFEUjelnaGI67v6+N7qXJEvQuIGa99l4xsCruSYOVSQ0uPANn4dAzm8lkYPaKLrrijLq7x23w==}
@@ -680,6 +701,10 @@ packages:
     peerDependencies:
       svelte: ^3.56.0 || ^4.0.0 || ^5.0.0-next.120
 
+  minimatch@5.1.6:
+    resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==}
+    engines: {node: '>=10'}
+
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
@@ -695,6 +720,9 @@ packages:
     resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  once@1.4.0:
+    resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
 
   path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
@@ -724,6 +752,11 @@ packages:
   resolve@1.22.10:
     resolution: {integrity: sha512-NPRy+/ncIMeDlTAsuqwKIiferiawhefFJtkNSW0qZJEqMEb+qBt/77B/jGeeek+F0uOeN05CDa6HXbbIgtVX4w==}
     engines: {node: '>= 0.4'}
+    hasBin: true
+
+  rollup@3.29.5:
+    resolution: {integrity: sha512-GVsDdsbJzzy4S/v3dqWPJ7EfvZJfCHiDqe80IyrF59LYuP+e6U1LJoUqeuqRbwAWoMNoXivMNeNAOf5E22VA1w==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
 
   rollup@4.34.6:
@@ -831,6 +864,9 @@ packages:
     peerDependenciesMeta:
       vite:
         optional: true
+
+  wrappy@1.0.2:
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
   zimmerframe@1.1.2:
     resolution: {integrity: sha512-rAbqEGa8ovJy4pyBxZM70hg4pE6gDgaQ0Sl9M3enG3I0d6H4XSAM3GeNGLKnsBpuijUow064sf7ww1nutC5/3w==}
@@ -940,41 +976,40 @@ snapshots:
 
   '@polka/url@1.0.0-next.28': {}
 
-  '@rollup/plugin-commonjs@28.0.2(rollup@4.34.6)':
+  '@rollup/plugin-commonjs@25.0.8(rollup@3.29.5)':
     dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@4.34.6)
+      '@rollup/pluginutils': 5.1.4(rollup@3.29.5)
       commondir: 1.0.1
       estree-walker: 2.0.2
-      fdir: 6.4.3(picomatch@4.0.2)
+      glob: 8.1.0
       is-reference: 1.2.1
       magic-string: 0.30.17
-      picomatch: 4.0.2
     optionalDependencies:
-      rollup: 4.34.6
+      rollup: 3.29.5
 
-  '@rollup/plugin-json@6.1.0(rollup@4.34.6)':
+  '@rollup/plugin-json@6.1.0(rollup@3.29.5)':
     dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@4.34.6)
+      '@rollup/pluginutils': 5.1.4(rollup@3.29.5)
     optionalDependencies:
-      rollup: 4.34.6
+      rollup: 3.29.5
 
-  '@rollup/plugin-node-resolve@16.0.0(rollup@4.34.6)':
+  '@rollup/plugin-node-resolve@15.3.1(rollup@3.29.5)':
     dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@4.34.6)
+      '@rollup/pluginutils': 5.1.4(rollup@3.29.5)
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-module: 1.0.0
       resolve: 1.22.10
     optionalDependencies:
-      rollup: 4.34.6
+      rollup: 3.29.5
 
-  '@rollup/pluginutils@5.1.4(rollup@4.34.6)':
+  '@rollup/pluginutils@5.1.4(rollup@3.29.5)':
     dependencies:
       '@types/estree': 1.0.6
       estree-walker: 2.0.2
       picomatch: 4.0.2
     optionalDependencies:
-      rollup: 4.34.6
+      rollup: 3.29.5
 
   '@rollup/rollup-android-arm-eabi@4.34.6':
     optional: true
@@ -1037,14 +1072,6 @@ snapshots:
     dependencies:
       '@sveltejs/kit': 2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1))
       import-meta-resolve: 4.1.0
-
-  '@sveltejs/adapter-node@5.2.12(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))':
-    dependencies:
-      '@rollup/plugin-commonjs': 28.0.2(rollup@4.34.6)
-      '@rollup/plugin-json': 6.1.0(rollup@4.34.6)
-      '@rollup/plugin-node-resolve': 16.0.0(rollup@4.34.6)
-      '@sveltejs/kit': 2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1))
-      rollup: 4.34.6
 
   '@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1))':
     dependencies:
@@ -1160,9 +1187,23 @@ snapshots:
 
   acorn@8.14.0: {}
 
+  amplify-adapter@0.2.0(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1))):
+    dependencies:
+      '@rollup/plugin-commonjs': 25.0.8(rollup@3.29.5)
+      '@rollup/plugin-json': 6.1.0(rollup@3.29.5)
+      '@rollup/plugin-node-resolve': 15.3.1(rollup@3.29.5)
+      '@sveltejs/kit': 2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.19.9)(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1))
+      rollup: 3.29.5
+
   aria-query@5.3.2: {}
 
   axobject-query@4.1.0: {}
+
+  balanced-match@1.0.2: {}
+
+  brace-expansion@2.0.1:
+    dependencies:
+      balanced-match: 1.0.2
 
   chokidar@4.0.3:
     dependencies:
@@ -1229,10 +1270,20 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.2
 
+  fs.realpath@1.0.0: {}
+
   fsevents@2.3.3:
     optional: true
 
   function-bind@1.1.2: {}
+
+  glob@8.1.0:
+    dependencies:
+      fs.realpath: 1.0.0
+      inflight: 1.0.6
+      inherits: 2.0.4
+      minimatch: 5.1.6
+      once: 1.4.0
 
   graceful-fs@4.2.11: {}
 
@@ -1241,6 +1292,13 @@ snapshots:
       function-bind: 1.1.2
 
   import-meta-resolve@4.1.0: {}
+
+  inflight@1.0.6:
+    dependencies:
+      once: 1.4.0
+      wrappy: 1.0.2
+
+  inherits@2.0.4: {}
 
   is-core-module@2.16.1:
     dependencies:
@@ -1319,6 +1377,10 @@ snapshots:
       svelte: 5.19.9
       vfile-message: 2.0.4
 
+  minimatch@5.1.6:
+    dependencies:
+      brace-expansion: 2.0.1
+
   mri@1.2.0: {}
 
   mrmime@2.0.0: {}
@@ -1326,6 +1388,10 @@ snapshots:
   ms@2.1.3: {}
 
   nanoid@3.3.8: {}
+
+  once@1.4.0:
+    dependencies:
+      wrappy: 1.0.2
 
   path-parse@1.0.7: {}
 
@@ -1350,6 +1416,10 @@ snapshots:
       is-core-module: 2.16.1
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
+
+  rollup@3.29.5:
+    optionalDependencies:
+      fsevents: 2.3.3
 
   rollup@4.34.6:
     dependencies:
@@ -1451,5 +1521,7 @@ snapshots:
   vitefu@1.0.5(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1)):
     optionalDependencies:
       vite: 6.1.0(jiti@2.4.2)(lightningcss@1.29.1)
+
+  wrappy@1.0.2: {}
 
   zimmerframe@1.1.2: {}
