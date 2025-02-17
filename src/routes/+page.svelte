@@ -9,6 +9,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
+<!-- TODO: Create 3D canvas -->
 <section>
 	<h1>
 		<span class="welcome">

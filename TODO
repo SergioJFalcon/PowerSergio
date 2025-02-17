@@ -4,6 +4,7 @@ Frontend:
     ✔ Basic static markdown blog posts @done(25-02-17 11:11)
     ☐ Better styling
   ☐ Tick List
+    ☐ Integrate google sheets https://docs.sheetjs.com/docs/demos/static/svelte
     ☐ Create background task to update tick list every couple of hours from my google spreadsheet
     ☐ Data table with sortable columns (has links to video, blog post, location, etc)
     ☐ Map with pins for each climb
