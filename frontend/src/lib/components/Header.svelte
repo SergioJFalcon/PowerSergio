@@ -19,20 +19,20 @@
 			<li aria-current={page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</li>
-			<li aria-current={page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
-			</li>
-			<li aria-current={page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
+			<!-- <li aria-current={page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
 				<a href="/sverdle">Sverdle</a>
-			</li>
+			</li> -->
 			<li aria-current={page.url.pathname.startsWith('/blog') ? 'page' : undefined}>
-				<a href="/blog">Blog</a>
+				<a href="/blog">Training Blog</a>
 			</li>
 			<li aria-current={page.url.pathname.startsWith('/achievements') ? 'page' : undefined}>
 				<a href="/achievements">Achievements</a>
 			</li>
 			<li aria-current={page.url.pathname.startsWith('rankings') ? 'page' : undefined}>
 				<a href="/rankings">Rankings</a>
+			</li>
+			<li aria-current={page.url.pathname === '/about' ? 'page' : undefined}>
+				<a href="/about">About</a>
 			</li>
 			<!-- 
 			<li aria-current={page.url.pathname.startsWith('/contact') ? 'page' : undefined}>
