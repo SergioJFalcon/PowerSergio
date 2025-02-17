@@ -18,6 +18,8 @@
 		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@tailwindcss/vite": "^4.0.0",
+		"@types/dat.gui": "^0.7.13",
+		"@types/three": "^0.173.0",
 		"amplify-adapter": "^0.2.0",
 		"mdsvex": "^0.12.3",
 		"svelte": "^5.0.0",
@@ -30,5 +32,13 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"@threlte/core": "^8.0.1",
+		"@threlte/extras": "^9.0.1",
+		"@threlte/gltf": "^3.0.0",
+		"dat.gui": "^0.7.9",
+		"stats-gl": "^3.6.0",
+		"three": "^0.173.0"
 	}
 }

@@ -2,6 +2,8 @@
 	import Counter from '$lib/components/Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcomeFallback from '$lib/images/svelte-welcome.png';
+  import { Canvas } from '@threlte/core';
+  import Scene from '$lib/components/Scene.svelte';
 </script>
 
 <svelte:head>
@@ -11,7 +13,7 @@
 
 <!-- TODO: Create 3D canvas -->
 <section>
-	<h1>
+	<!-- <h1>
 		<span class="welcome">
 			<picture>
 				<source srcset={welcome} type="image/webp" />
@@ -26,7 +28,10 @@
 		try editing <strong>src/routes/+page.svelte</strong>
 	</h2>
 
-	<Counter />
+	<Counter /> -->
+  <Canvas>
+    <Scene />
+  </Canvas>
 </section>
 
 <style>
