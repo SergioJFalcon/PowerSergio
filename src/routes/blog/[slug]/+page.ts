@@ -1,7 +1,7 @@
 import { error } from '@sveltejs/kit'
 
 export async function load({ params }) {
-  console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$SLUG PARAMS: ", params);
+  console.log("SLUG PARAMS: ", params);
 	try {
 		const post = await import(`$posts/${params.slug}.svx`)
 
