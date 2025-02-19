@@ -15,6 +15,23 @@ Left pec is really sore, right tricep is oddly sore(?huh? from what), and my rig
 
 # Gym - Row Day
 
-## Rows
+## Seated Rows
 
-    TODO!
+    - Set 1: 15 reps @ 70lbs
+    - Set 2: 15 reps @ 80lbs
+    - Set 3: 10 reps @ 110lbs
+    - Set 4: 10 reps @ 140lbs
+    - Set 5: 8 reps @ 155lbs
+  
+## Lat Pull downs
+    - Set 1: 5 reps @ 120lbs
+    - Set 2: 5 reps @ 140lbs
+
+## Lateral Raises
+    - Set 1: 5 reps @ 40lbs
+    - Set 2: 5 reps @ 70lbs
+    - Set 3: 5 reps @ 80lbs
+
+## Abdominal Crunches
+    - Set 1: 10 reps @ 70lbs
+    - Set 2: 10 reps @ 90lbs
