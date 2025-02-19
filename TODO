@@ -1,6 +1,10 @@
 Frontend:
+  ☐ Update header logos to be more personalized
+  ☐ Update theme to be more personalized
   ☐ 3D splash - https://tympanus.net/codrops/2025/02/04/how-to-make-the-fluffiest-grass-with-three-js/
-  ☐ Training Blog
+  ☐ Create blog post
+  ☐ Delete blog post
+  ☐ Edit blog post
   ✔ Basic static markdown blog posts @done(25-02-17 11:11)
   ☐ Better styling
   ☐ Tick List
@@ -10,7 +14,6 @@ Frontend:
     ☐ Map with pins for each climb
   ☐ Notable Ascents
   ☐ Rankings for different boards
-    ☐ Moonboard
-    ☐ Tension Board
-    ☐ Tenson Board 2
+    ☐ Pull data from tension board website or api
+    ☐ Pull data from moonboard website or api
   ☐ Admin Panel

@@ -17,12 +17,6 @@ importers:
       '@threlte/gltf':
         specifier: ^3.0.0
         version: 3.0.0
-      dat.gui:
-        specifier: ^0.7.9
-        version: 0.7.9
-      stats-gl:
-        specifier: ^3.6.0
-        version: 3.6.0(three@0.173.0)
       three:
         specifier: ^0.173.0
         version: 0.173.0
@@ -45,9 +39,6 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.0.0
         version: 4.0.6(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1))
-      '@types/dat.gui':
-        specifier: ^0.7.13
-        version: 0.7.13
       '@types/three':
         specifier: ^0.173.0
         version: 0.173.0
@@ -546,9 +537,6 @@ packages:
   '@types/cookie@0.6.0':
     resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
 
-  '@types/dat.gui@0.7.13':
-    resolution: {integrity: sha512-LmG4Pr0mbsB/1WVttf8xaHx45BvSBDGY5D9+0/9AZCbI4vvOguwBHZdKyJMxt5Yst8+icRSHKmr7ClV2u5ZtDA==}
-
   '@types/draco3d@1.4.10':
     resolution: {integrity: sha512-AX22jp8Y7wwaBgAixaSvkoG4M/+PlAcm3Qs4OW8yT9DM4xUpWKeFhLueTAyZF39pviAdcDdeJoACapiAceqNcw==}
 
@@ -741,9 +729,6 @@ packages:
 
   cwise-compiler@1.1.3:
     resolution: {integrity: sha512-WXlK/m+Di8DMMcCjcWr4i+XzcQra9eCdXIJrgh4TUgh0pIS/yJduLxS9JgefsHJ/YVLdgPtXm9r62W92MvanEQ==}
-
-  dat.gui@0.7.9:
-    resolution: {integrity: sha512-sCNc1OHobc+Erc1HqiswYgHdVNpSJUlk/Hz8vzOCsER7rl+oF/4+v8GXFUyCgtXpoCX6+bnmg07DedLvBLwYKQ==}
 
   data-urls@3.0.2:
     resolution: {integrity: sha512-Jy/tj3ldjZJo63sVAvg6LHt2mHvl4V6AgRAmNDtLdm7faqtsx+aJG42rsyCo9JCoRVKwPFzKlIPx3DIibwSIaQ==}
@@ -1461,14 +1446,6 @@ packages:
   spdx-license-ids@3.0.21:
     resolution: {integrity: sha512-Bvg/8F5XephndSK3JffaRqdT+gyhfqIPwDHpX80tJrF8QQRYMo8sNMeaZ2Dp5+jhwKnUmIOyFFQfHRkjJm5nXg==}
 
-  stats-gl@3.6.0:
-    resolution: {integrity: sha512-Bpi5nwvC2pls9lcI5sGqAcUqB/2kMYfsR4KoAglXFtY3YUdm7lJFg8FqS7eKKNgg3ruDMNCuwU+uRwPOwJiGnw==}
-    peerDependencies:
-      three: '*'
-    peerDependenciesMeta:
-      three:
-        optional: true
-
   streamx@2.22.0:
     resolution: {integrity: sha512-sLh1evHOzBy/iWRiR6d1zRcLao4gGZr3C1kzNz4fopCOKJb6xD9ub8Mpi9Mr1R6id5o43S+d93fI48UC5uM9aw==}
 
@@ -2139,8 +2116,6 @@ snapshots:
 
   '@types/cookie@0.6.0': {}
 
-  '@types/dat.gui@0.7.13': {}
-
   '@types/draco3d@1.4.10': {}
 
   '@types/estree@1.0.6': {}
@@ -2324,8 +2299,6 @@ snapshots:
   cwise-compiler@1.1.3:
     dependencies:
       uniq: 1.0.1
-
-  dat.gui@0.7.9: {}
 
   data-urls@3.0.2:
     dependencies:
@@ -3059,10 +3032,6 @@ snapshots:
       spdx-license-ids: 3.0.21
 
   spdx-license-ids@3.0.21: {}
-
-  stats-gl@3.6.0(three@0.173.0):
-    optionalDependencies:
-      three: 0.173.0
 
   streamx@2.22.0:
     dependencies:
