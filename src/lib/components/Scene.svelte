@@ -94,7 +94,6 @@
   <T.MeshStandardMaterial color="hotpink" />
 </T.Mesh>
 
-
 {#await useGltf('/assets/island.glb') then gltf}
   <T is={gltf.scene} />
 {/await}

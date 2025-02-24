@@ -1,0 +1,26 @@
+---
+title: Chest Day
+description: Casual climbing training day with a little bit of tension boarding
+date: '2025-2-24'
+categories:
+  - climbing
+  - tension board
+published: true
+---
+
+# Gym
+
+## Cardio
+
+    10 mins on the bicycle
+
+## Bench Press
+
+    - Set 0: 10 reps @ 45lbs (Warm up)
+    - Set 1: 8 reps @ 95lbs
+    - Set 2: 8 reps @ 115lbs
+    - Set 3: 8 reps @ 125lbs
+    - Set 4: 8 reps @ 135lbs
+    - Set 5: 5 reps @ 145lbs
+    - Set 6: 3 reps @ 155lbs
+    - Set 7: 5 reps @ 145lbs

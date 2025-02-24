@@ -6,7 +6,6 @@ categories:
   - row
   - back day
   - gym
-  - climbing
 published: true
 ---
 
