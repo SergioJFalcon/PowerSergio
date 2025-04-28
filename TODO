@@ -17,3 +17,7 @@ Frontend:
     ☐ Pull data from tension board website or api
     ☐ Pull data from moonboard website or api
   ☐ Admin Panel
+
+Backend:
+  ☐ Integrate pulling/displaying data from garmin
+      - https://github.com/arpanghosh8453/garmin-grafana/blob/main/garmin-fetch.py
